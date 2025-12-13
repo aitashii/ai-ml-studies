@@ -14,7 +14,15 @@ This repository serves as a dedicated space for:
 ## Structure
 
 - [CHAT_HISTORY.md](CHAT_HISTORY.md) - Conversation log with Claude tracking development and learning sessions
-- More to be added as the repository grows
+- `resources/` - Learning materials and reference guides
+  - `python/` - Python programming guides and tutorials (Polish)
+    - [wpradzenie_do_pythona.md](resources/python/wpradzenie_do_pythona.md) - Introduction to Python
+    - [data_types.md](resources/python/data_types.md) - Python data types
+    - [operatory.md](resources/python/operatory.md) - Python operators
+    - [input_output.md](resources/python/input_output.md) - Input/Output in Python
+    - [style_guide.md](resources/python/style_guide.md) - Python style guide (PEP 8)
+  - `tools/` - Development tools and shortcuts
+    - [vscode_shortcuts.md](resources/tools/vscode_shortcuts.md) - VSCode keyboard shortcuts
 
 ## Getting Started
 
@@ -31,8 +39,9 @@ This is a personal learning repository. Content will be added progressively as I
 
 ## Resources
 
-### Coding Standards
-- [Python Style Guide (PEP 8 based)](https://gist.github.com/Jaras7/7d315b7b80dcd58d0b5d77d4afb124ff) - Polish language guide to Python naming conventions
+All learning resources are organized in the `resources/` directory:
+- **Python Guides**: Comprehensive Polish-language Python tutorials covering basics, data types, operators, I/O, and style conventions
+- **Development Tools**: VSCode shortcuts and productivity tips
 
 ---
 
