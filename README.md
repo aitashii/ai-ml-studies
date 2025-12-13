@@ -21,6 +21,8 @@ This repository serves as a dedicated space for:
     - [operatory.md](resources/python/operatory.md) - Python operators
     - [input_output.md](resources/python/input_output.md) - Input/Output in Python
     - [style_guide.md](resources/python/style_guide.md) - Python style guide (PEP 8)
+  - `networking/` - Network fundamentals and concepts (Polish)
+    - [Klasy sieci.md](resources/networking/Klasy%20sieci.md) - IP address classes and subnetting
   - `tools/` - Development tools and shortcuts
     - [vscode_shortcuts.md](resources/tools/vscode_shortcuts.md) - VSCode keyboard shortcuts
 
@@ -41,6 +43,7 @@ This is a personal learning repository. Content will be added progressively as I
 
 All learning resources are organized in the `resources/` directory:
 - **Python Guides**: Comprehensive Polish-language Python tutorials covering basics, data types, operators, I/O, and style conventions
+- **Networking**: IP address classes, subnetting, and network fundamentals
 - **Development Tools**: VSCode shortcuts and productivity tips
 
 ---
