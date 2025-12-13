@@ -29,6 +29,11 @@ This is a personal learning repository. Content will be added progressively as I
 - Reinforcement Learning
 - MLOps and model deployment
 
+## Resources
+
+### Coding Standards
+- [Python Style Guide (PEP 8 based)](https://gist.github.com/Jaras7/7d315b7b80dcd58d0b5d77d4afb124ff) - Polish language guide to Python naming conventions
+
 ---
 
 Created: December 13, 2025
