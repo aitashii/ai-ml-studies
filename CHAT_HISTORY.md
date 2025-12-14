@@ -160,6 +160,24 @@ User asked to create a new repository for AI and ML studies with a chat history 
 - resources/networking/ - 1 Networking guide (NEW)
 - resources/tools/ - 1 VSCode shortcuts guide
 
+10. **Creating Requirements File:**
+   - User: "create file for requirements where we will keep the list of all libraries"
+   - Created requirements.txt file with common AI/ML Python libraries
+   - Included sections for:
+     - Core data science libraries (numpy, pandas, matplotlib, seaborn)
+     - Machine learning (scikit-learn)
+     - Deep learning (tensorflow, torch, keras - commented out)
+     - NLP libraries (nltk, spacy, transformers - commented out)
+     - Computer vision (opencv-python, pillow - commented out)
+     - Jupyter notebooks and utilities
+   - Updated README.md with installation instructions
+   - Added requirements.txt to repository structure
+   - Updating CHAT_HISTORY.md with conversation (this update)
+   - Committing and pushing changes
+
+**New File Added:**
+- requirements.txt - Python dependencies management file
+
 ---
 
 ## Study Notes

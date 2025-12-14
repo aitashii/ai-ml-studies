@@ -14,6 +14,7 @@ This repository serves as a dedicated space for:
 ## Structure
 
 - [CHAT_HISTORY.md](CHAT_HISTORY.md) - Conversation log with Claude tracking development and learning sessions
+- [requirements.txt](requirements.txt) - Python dependencies for AI/ML projects
 - `resources/` - Learning materials and reference guides
   - `python/` - Python programming guides and tutorials (Polish)
     - [wpradzenie_do_pythona.md](resources/python/wpradzenie_do_pythona.md) - Introduction to Python
@@ -29,6 +30,16 @@ This repository serves as a dedicated space for:
 ## Getting Started
 
 This is a personal learning repository. Content will be added progressively as I work through various AI/ML topics.
+
+### Installation
+
+To install the required Python libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+The [requirements.txt](requirements.txt) file contains all necessary Python dependencies for AI/ML studies.
 
 ## Topics of Interest
 
