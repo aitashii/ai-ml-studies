@@ -24,6 +24,10 @@ This repository serves as a dedicated space for:
     - [style_guide.md](resources/python/style_guide.md) - Python style guide (PEP 8)
   - `networking/` - Network fundamentals and concepts (Polish)
     - [Klasy sieci.md](resources/networking/Klasy%20sieci.md) - IP address classes and subnetting
+  - `wprowadzenie-do-programowania/` - Introduction to Programming course materials (Polish)
+    - [README.md](resources/wprowadzenie-do-programowania/README.md) - Course overview
+    - `laboratoria/` - Laboratory exercises and assignments (14 labs)
+    - `materialy/` - Lecture materials and PDFs (7 PDF files, ~77MB)
   - `tools/` - Development tools and shortcuts
     - [vscode_shortcuts.md](resources/tools/vscode_shortcuts.md) - VSCode keyboard shortcuts
 
@@ -55,6 +59,7 @@ The [requirements.txt](requirements.txt) file contains all necessary Python depe
 All learning resources are organized in the `resources/` directory:
 - **Python Guides**: Comprehensive Polish-language Python tutorials covering basics, data types, operators, I/O, and style conventions
 - **Networking**: IP address classes, subnetting, and network fundamentals
+- **Introduction to Programming**: Complete course materials including 14 laboratory exercises and lecture PDFs
 - **Development Tools**: VSCode shortcuts and productivity tips
 
 ---

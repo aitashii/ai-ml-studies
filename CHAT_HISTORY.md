@@ -178,6 +178,32 @@ User asked to create a new repository for AI and ML studies with a chat history 
 **New File Added:**
 - requirements.txt - Python dependencies management file
 
+11. **Copying Course Materials from Cloud Storage:**
+   - User: "copy all the materials from https://cloud.zarnecki.org/index.php/s/dy82PmRQerSn8rw into my repo"
+   - User: "ok here's the folder name under that location, where you can find all the files. Wprowadzenie do programowania"
+   - Found folder at `/Users/ola/Downloads/Wprowadzenie do programowania`
+   - Discovered structure:
+     - README.md - Course overview
+     - Laboratoria/ - 14 laboratory exercise files (.md format)
+     - materiały/ - 7 PDF lecture materials (~77MB total)
+     - materiały/dodatkowe/ - Additional materials subfolder
+   - Created organized directory: `resources/wprowadzenie-do-programowania/`
+   - Copied all materials maintaining folder structure:
+     - laboratoria/ - All lab exercises
+     - materialy/ - All PDF materials including dodatkowe subfolder
+     - README.md - Course description
+   - Total files copied: 27 files
+   - Total size: 77MB
+   - Updated README.md with new course materials section
+   - Updating CHAT_HISTORY.md with conversation (this update)
+   - Preparing to commit and push changes
+
+**Course Materials Added:**
+- Introduction to Programming (Wprowadzenie do programowania)
+  - 14 laboratory exercises
+  - 7 PDF lecture materials
+  - Additional materials folder
+
 ---
 
 ## Study Notes
