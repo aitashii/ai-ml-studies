@@ -204,6 +204,37 @@ User asked to create a new repository for AI and ML studies with a chat history 
   - 7 PDF lecture materials
   - Additional materials folder
 
+12. **Installing Parallels Desktop Extension:**
+   - User: "Install Parallels Desktop extension for VS code please"
+   - Searched for correct extension ID in VS Code Marketplace
+   - Initial attempt with incorrect publisher name failed
+   - Found correct publisher: ParallelsDesktop.parallels-desktop
+   - Successfully installed Parallels Desktop extension v1.5.6
+   - Extension features:
+     - Manage Parallels Desktop VMs directly from VS Code
+     - Create, group, and operate VM snapshots and containers
+     - Support for macOS, Windows, and Linux VMs
+     - Integration with HashiCorp Vagrant and Packer
+   - Requires Parallels Desktop Pro or Business Edition
+   - Sources: VS Code Marketplace, Parallels Documentation, GitHub Repository
+
+13. **Opening Repository in VS Code:**
+   - User: "On the Explorer, open my studies repo please"
+   - Initially opened ai-ml-studies folder in Finder (macOS Explorer)
+   - User clarified: "I meant open them here in VS code explorer"
+   - Opened ai-ml-studies repository in new VS Code instance with `code` command
+   - User asked: "you cant open it in this window? it needs to be opened in a new instance of VS Code?"
+   - Explained that adding folder to current workspace requires:
+     - Option 1: File → Add Folder to Workspace (manual UI action)
+     - Option 2: Drag and drop from Finder to VS Code Explorer
+   - User decided: "it's ok let's not do it and keep it in the 2nd instance, instead just save all the info we talked about to the chat history"
+   - Decided to keep ai-ml-studies in separate VS Code window
+   - Updating CHAT_HISTORY.md with all recent conversations (this update)
+
+**Additional Setup Completed:**
+- Parallels Desktop VS Code extension installed
+- Repository accessible in separate VS Code instance
+
 ---
 
 ## Study Notes
