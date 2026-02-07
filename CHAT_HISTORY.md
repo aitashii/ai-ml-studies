@@ -237,6 +237,84 @@ User asked to create a new repository for AI and ML studies with a chat history 
 
 ---
 
+### Session: 2026-02-07 - Creating Programming Exercises
+
+**User Request:**
+User asked to complete tasks from "Wprowadzenie do programowania" (Introduction to Programming) subject and create a structured folder similar to existing studia_programowanie.ipynb notebook.
+
+**Conversation Flow:**
+
+1. **Review of Previous Work:**
+   - Read CHAT_HISTORY.md to understand working methodology
+   - Reviewed studia_programowanie.ipynb to see notebook structure and coding style
+   - Confirmed approach: organized sections with markdown headers, well-commented Polish code, test cases
+
+2. **Task List Provided:**
+   - User opened file with complete task list: "Podstawy programowania (Python) - ZESTAW PODSTAWOWY"
+   - Task categories:
+     - Section 1: Wprowadzenie i pierwszy program (2 tasks)
+     - Section 2: Typy danych, zmienne, operatory, wejście/wyjście (3 tasks)
+     - Section 3: Instrukcje warunkowe (3 tasks)
+     - Section 4: Pętle (for, while) (4 tasks)
+   - Total: 12 programming exercises
+
+3. **Implementation:**
+   - Created main folder: `Cwiczenia-programowanie/`
+   - Created Jupyter notebook: `podstawy-programowania.ipynb`
+   - Organized notebook structure:
+     - Google Colab badge for easy access
+     - Header with metadata (author, date, subject)
+     - Four main sections matching task categories
+     - Each task with clear markdown description
+     - All solutions implemented with:
+       - Descriptive comments in Polish
+       - Input validation where needed
+       - Clear output formatting
+       - Error handling (e.g., division by zero)
+     - Final summary section
+
+4. **Solutions Implemented:**
+
+   **Section 1 - Introduction:**
+   - Zadanie 1.1: Simple print statements
+   - Zadanie 1.2: Display student information using variables
+
+   **Section 2 - Data Types & Operators:**
+   - Zadanie 2.1: Basic calculator with four operations (+, -, *, /)
+   - Zadanie 2.2: User greeting with input
+   - Zadanie 2.3: Type checking demonstration with type()
+
+   **Section 3 - Conditional Statements:**
+   - Zadanie 3.1: Check if number is positive/negative/zero
+   - Zadanie 3.2: Check if number is even/odd
+   - Zadanie 3.3: Grading system (0-100 points to grades 2-5)
+
+   **Section 4 - Loops:**
+   - Zadanie 4.1: Display numbers 1-20
+   - Zadanie 4.2: Calculate sum of numbers 1 to n
+   - Zadanie 4.3: Draw rectangle with asterisks
+   - Zadanie 4.4: Draw Christmas tree with asterisks (1-20 height)
+
+**Files Created:**
+- Cwiczenia-programowanie/podstawy-programowania.ipynb
+
+**Technical Features:**
+- Google Colab integration badge
+- Proper Python 3 kernel configuration
+- Professional notebook structure
+- All code tested and validated
+- Input validation and error handling
+- Mathematical verification (sum formula in 4.2)
+- Range validation (grading system, tree height)
+
+**Notebook Statistics:**
+- 12 complete exercises
+- 4 main sections
+- Full markdown documentation
+- Ready for Google Colab and local execution
+
+---
+
 ## Study Notes
 
 (Add your study notes, experiments, and learnings here as you progress)
