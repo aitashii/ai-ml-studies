@@ -1,0 +1,321 @@
+<mxfile host="app.diagrams.net" modified="2026-03-18T12:00:00.000Z" agent="Claude" version="24.0.0" type="device">
+  <diagram id="kolejka-steps" name="Kolejka — przykład krok po kroku">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Tytuł -->
+        <mxCell id="title" value="&lt;b&gt;Kolejka — przykład krok po kroku&lt;/b&gt;&lt;br&gt;enqueue(Anna), enqueue(Bartek), enqueue(Celina), dequeue(), dequeue(), enqueue(Darek)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="900" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- ======= KROK 0: Pusta kolejka ======= -->
+        <mxCell id="k0_title" value="&lt;b&gt;Start&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#999999&quot; size=&quot;1&quot;&gt;Kolejka()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="120" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="115" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="20" y="140" width="70" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_empty" value="&lt;i&gt;pusta&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="60" y="132" width="90" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_state" value="deque([])" style="text;html=1;align=center;verticalAlign=middle;fontSize=8;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="50" y="182" width="120" height="15" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 0→1 -->
+        <mxCell id="a01" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="145" as="sourcePoint"/>
+            <mxPoint x="210" y="145" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 1: enqueue(Anna) ======= -->
+        <mxCell id="k1_title" value="&lt;b&gt;enqueue(Anna)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="210" y="80" width="130" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="210" y="115" width="130" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="210" y="170" width="130" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="180" y="140" width="70" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_e1" value="&lt;b&gt;Anna&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="128" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_fp" value="P+T" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="115" width="50" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_state" value="deque([Anna])" style="text;html=1;align=center;verticalAlign=middle;fontSize=8;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="205" y="182" width="140" height="15" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 1→2 -->
+        <mxCell id="a12" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="345" y="145" as="sourcePoint"/>
+            <mxPoint x="380" y="145" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 2: enqueue(Bartek) ======= -->
+        <mxCell id="k2_title" value="&lt;b&gt;enqueue(Bartek)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="380" y="80" width="140" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="115" width="200" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="170" width="200" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="350" y="140" width="70" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_e1" value="&lt;b&gt;Anna&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="390" y="128" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_e2" value="&lt;b&gt;Bartek&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="470" y="128" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_fp" value="P" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="115" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_ft" value="T" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="487" y="115" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_state" value="deque([Anna, Bartek])" style="text;html=1;align=center;verticalAlign=middle;fontSize=8;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="375" y="182" width="180" height="15" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 2→3 -->
+        <mxCell id="a23" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="145" as="sourcePoint"/>
+            <mxPoint x="620" y="145" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 3: enqueue(Celina) ======= -->
+        <mxCell id="k3_title" value="&lt;b&gt;enqueue(Celina)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="620" y="80" width="140" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="115" width="290" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="170" width="290" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="590" y="140" width="70" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_e1" value="&lt;b&gt;Anna&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="630" y="128" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_e2" value="&lt;b&gt;Bartek&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="710" y="128" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_e3" value="&lt;b&gt;Celina&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="128" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_fp" value="P" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="115" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_ft" value="T" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="115" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_state" value="deque([Anna, Bartek, Celina])" style="text;html=1;align=center;verticalAlign=middle;fontSize=8;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="620" y="182" width="250" height="15" as="geometry"/>
+        </mxCell>
+
+        <!-- ======= DRUGI RZĄD ======= -->
+
+        <!-- Strzałka w dół (kontynuacja) -->
+        <mxCell id="a_down" value="" style="endArrow=classic;html=1;strokeColor=#CC0000;strokeWidth=2;curved=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="200" as="sourcePoint"/>
+            <mxPoint x="760" y="260" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 4: dequeue() → Anna ======= -->
+        <mxCell id="k4_title" value="&lt;b&gt;dequeue()&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;→ Anna&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="130" y="260" width="130" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="290" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="120" y="355" width="290" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="90" y="325" width="70" height="10" as="geometry"/>
+        </mxCell>
+
+        <!-- Ghost Anna -->
+        <mxCell id="k4_ghost" value="&lt;font color=&quot;#CCCCCC&quot;&gt;Anna&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCCCCC;fontSize=11;dashed=1;dashPattern=3 3;" vertex="1" parent="1">
+          <mxGeometry x="130" y="313" width="70" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="k4_e2" value="&lt;b&gt;Bartek&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="210" y="313" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_e3" value="&lt;b&gt;Celina&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="290" y="313" width="70" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="k4_fp" value="P (nowy)" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="298" width="60" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_ft" value="T" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="307" y="298" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_state" value="deque([Bartek, Celina])" style="text;html=1;align=center;verticalAlign=middle;fontSize=8;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="150" y="367" width="200" height="15" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 4→5 -->
+        <mxCell id="a45" value="" style="endArrow=classic;html=1;strokeColor=#CC0000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="330" as="sourcePoint"/>
+            <mxPoint x="475" y="330" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 5: dequeue() → Bartek ======= -->
+        <mxCell id="k5_title" value="&lt;b&gt;dequeue()&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;→ Bartek&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="490" y="260" width="130" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="300" width="200" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="355" width="200" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="450" y="325" width="70" height="10" as="geometry"/>
+        </mxCell>
+
+        <!-- Ghost Bartek -->
+        <mxCell id="k5_ghost" value="&lt;font color=&quot;#CCCCCC&quot;&gt;Bartek&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCCCCC;fontSize=11;dashed=1;dashPattern=3 3;" vertex="1" parent="1">
+          <mxGeometry x="490" y="313" width="70" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="k5_e3" value="&lt;b&gt;Celina&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="570" y="313" width="70" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="k5_fp" value="P+T" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="298" width="50" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_state" value="deque([Celina])" style="text;html=1;align=center;verticalAlign=middle;fontSize=8;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="490" y="367" width="160" height="15" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 5→6 -->
+        <mxCell id="a56" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="330" as="sourcePoint"/>
+            <mxPoint x="745" y="330" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 6: enqueue(Darek) ======= -->
+        <mxCell id="k6_title" value="&lt;b&gt;enqueue(Darek)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="755" y="260" width="140" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="750" y="300" width="210" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="750" y="355" width="210" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="720" y="325" width="70" height="10" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="k6_e3" value="&lt;b&gt;Celina&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="760" y="313" width="70" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_e4" value="&lt;b&gt;Darek&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="840" y="313" width="70" height="38" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="k6_fp" value="P" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="778" y="298" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_ft" value="T" style="text;html=1;align=center;verticalAlign=top;fontSize=7;fontColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="298" width="30" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_state" value="deque([Celina, Darek])" style="text;html=1;align=center;verticalAlign=middle;fontSize=8;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="755" y="367" width="180" height="15" as="geometry"/>
+        </mxCell>
+
+        <!-- ======= LEGENDA ======= -->
+        <mxCell id="legend_title" value="&lt;b&gt;Legenda:&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="50" y="420" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="450" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1t" value="= przód (P) — następny do obsługi" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="75" y="447" width="230" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="50" y="472" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2t" value="= tył (T) — ostatnio dodany" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="75" y="469" width="200" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="494" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3t" value="= elementy w środku" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="75" y="491" width="150" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4" value="" style="rounded=1;fillColor=none;strokeColor=#CCCCCC;dashed=1;dashPattern=3 3;" vertex="1" parent="1">
+          <mxGeometry x="50" y="516" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4t" value="= usunięty element" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="75" y="513" width="150" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałki legenda -->
+        <mxCell id="leg5a" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="546" as="sourcePoint"/>
+            <mxPoint x="70" y="546" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg5t" value="= enqueue (dodanie na koniec)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="75" y="536" width="200" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg6a" value="" style="endArrow=classic;html=1;strokeColor=#CC0000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="568" as="sourcePoint"/>
+            <mxPoint x="70" y="568" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg6t" value="= dequeue (pobranie z przodu)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="75" y="558" width="200" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Nota FIFO -->
+        <mxCell id="fifo_note" value="&lt;b&gt;Zauważ zasadę FIFO:&lt;/b&gt;&lt;br&gt;Dodaliśmy: Anna, Bartek, Celina&lt;br&gt;Pobraliśmy: &lt;b&gt;Anna&lt;/b&gt;, &lt;b&gt;Bartek&lt;/b&gt; (ta sama kolejność!)&lt;br&gt;&lt;br&gt;Kto pierwszy stanął w kolejce, ten pierwszy&lt;br&gt;został obsłużony — dokładnie jak w sklepie." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="420" y="420" width="380" height="120" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

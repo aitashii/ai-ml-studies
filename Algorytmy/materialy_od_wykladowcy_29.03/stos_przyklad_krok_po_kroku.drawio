@@ -1,0 +1,295 @@
+<mxfile host="app.diagrams.net" modified="2026-03-18T12:00:00.000Z" agent="Claude" version="24.0.0" type="device">
+  <diagram id="stos-steps" name="Stos — przykład krok po kroku">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Tytuł -->
+        <mxCell id="title" value="&lt;b&gt;Stos — przykład krok po kroku&lt;/b&gt;&lt;br&gt;push(10), push(20), push(30), pop(), pop(), push(40)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="300" y="15" width="700" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- ======= KROK 0: Pusty stos ======= -->
+        <mxCell id="k0_title" value="&lt;b&gt;Start&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#999999&quot;&gt;Stos()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="30" y="80" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_bottom" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="280" width="80" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_wl" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_wr" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_empty" value="&lt;i&gt;pusty&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="30" y="240" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="k0_state" value="[]" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="20" y="292" width="100" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 0→1 -->
+        <mxCell id="a01" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="200" as="sourcePoint"/>
+            <mxPoint x="175" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 1: push(10) ======= -->
+        <mxCell id="k1_title" value="&lt;b&gt;push(10)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="175" y="80" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_bottom" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="185" y="280" width="80" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_wl" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="135" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_wr" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="215" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_e1" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="195" y="245" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_top" value="TOP" style="text;html=1;align=center;verticalAlign=top;fontSize=8;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="232" width="60" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k1_state" value="[10]" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="175" y="292" width="100" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 1→2 -->
+        <mxCell id="a12" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="200" as="sourcePoint"/>
+            <mxPoint x="330" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 2: push(20) ======= -->
+        <mxCell id="k2_title" value="&lt;b&gt;push(20)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="335" y="80" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_bottom" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="345" y="280" width="80" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_wl" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="295" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_wr" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="375" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_e1" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="355" y="245" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_e2" value="&lt;b&gt;20&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="355" y="210" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_top" value="TOP" style="text;html=1;align=center;verticalAlign=top;fontSize=8;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="197" width="60" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k2_state" value="[10, 20]" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="335" y="292" width="100" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 2→3 -->
+        <mxCell id="a23" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="200" as="sourcePoint"/>
+            <mxPoint x="490" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 3: push(30) ======= -->
+        <mxCell id="k3_title" value="&lt;b&gt;push(30)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="495" y="80" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_bottom" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="505" y="280" width="80" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_wl" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="455" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_wr" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="535" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_e1" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="515" y="245" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_e2" value="&lt;b&gt;20&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="515" y="210" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_e3" value="&lt;b&gt;30&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="515" y="175" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_top" value="TOP" style="text;html=1;align=center;verticalAlign=top;fontSize=8;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="162" width="60" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k3_state" value="[10, 20, 30]" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="490" y="292" width="110" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 3→4 -->
+        <mxCell id="a34" value="" style="endArrow=classic;html=1;strokeColor=#CC0000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="200" as="sourcePoint"/>
+            <mxPoint x="645" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 4: pop() → 30 ======= -->
+        <mxCell id="k4_title" value="&lt;b&gt;pop()&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;→ 30&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="655" y="75" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_bottom" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="665" y="280" width="80" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_wl" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="615" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_wr" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="695" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_e1" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="675" y="245" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_e2" value="&lt;b&gt;20&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="675" y="210" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Ghost 30 -->
+        <mxCell id="k4_ghost" value="&lt;font color=&quot;#CCCCCC&quot;&gt;30&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCCCCC;fontSize=13;dashed=1;dashPattern=3 3;" vertex="1" parent="1">
+          <mxGeometry x="675" y="175" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_top" value="TOP" style="text;html=1;align=center;verticalAlign=top;fontSize=8;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="675" y="197" width="60" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k4_state" value="[10, 20]" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="655" y="292" width="100" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 4→5 -->
+        <mxCell id="a45" value="" style="endArrow=classic;html=1;strokeColor=#CC0000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="200" as="sourcePoint"/>
+            <mxPoint x="800" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 5: pop() → 20 ======= -->
+        <mxCell id="k5_title" value="&lt;b&gt;pop()&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;→ 20&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="810" y="75" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_bottom" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="820" y="280" width="80" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_wl" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="770" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_wr" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="850" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_e1" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="830" y="245" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Ghost 20 -->
+        <mxCell id="k5_ghost" value="&lt;font color=&quot;#CCCCCC&quot;&gt;20&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCCCCC;fontSize=13;dashed=1;dashPattern=3 3;" vertex="1" parent="1">
+          <mxGeometry x="830" y="210" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_top" value="TOP" style="text;html=1;align=center;verticalAlign=top;fontSize=8;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="232" width="60" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k5_state" value="[10]" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="810" y="292" width="100" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka 5→6 -->
+        <mxCell id="a56" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="200" as="sourcePoint"/>
+            <mxPoint x="955" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ======= KROK 6: push(40) ======= -->
+        <mxCell id="k6_title" value="&lt;b&gt;push(40)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="965" y="80" width="100" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_bottom" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="975" y="280" width="80" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_wl" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="925" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_wr" value="" style="shape=line;strokeColor=#333333;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="200" width="120" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_e1" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="985" y="245" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_e2" value="&lt;b&gt;40&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="985" y="210" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_top" value="TOP" style="text;html=1;align=center;verticalAlign=top;fontSize=8;fontColor=#d80073;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="985" y="197" width="60" height="14" as="geometry"/>
+        </mxCell>
+        <mxCell id="k6_state" value="[10, 40]" style="text;html=1;align=center;verticalAlign=middle;fontSize=9;fontColor=#666666;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="965" y="292" width="100" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- ======= LEGENDA ======= -->
+        <mxCell id="legend_title" value="&lt;b&gt;Legenda:&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="30" y="340" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1" value="" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="370" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1t" value="= wierzchołek (TOP)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="367" width="130" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2" value="" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="392" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2t" value="= element wewnątrz stosu" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="389" width="160" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3" value="" style="rounded=1;fillColor=none;strokeColor=#CCCCCC;dashed=1;dashPattern=3 3;" vertex="1" parent="1">
+          <mxGeometry x="30" y="414" width="20" height="15" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3t" value="= usunięty element" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="55" y="411" width="130" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka zielona -->
+        <mxCell id="leg4a" value="" style="endArrow=classic;html=1;strokeColor=#008a00;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="444" as="sourcePoint"/>
+            <mxPoint x="50" y="444" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg4t" value="= push (dodanie)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#008a00;" vertex="1" parent="1">
+          <mxGeometry x="55" y="434" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Strzałka czerwona -->
+        <mxCell id="leg5a" value="" style="endArrow=classic;html=1;strokeColor=#CC0000;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="466" as="sourcePoint"/>
+            <mxPoint x="50" y="466" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg5t" value="= pop (zdjęcie)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="55" y="456" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Podsumowanie LIFO -->
+        <mxCell id="lifo_note" value="&lt;b&gt;Zauważ zasadę LIFO:&lt;/b&gt;&lt;br&gt;Dodaliśmy: 10, 20, 30&lt;br&gt;Zdjęliśmy: &lt;b&gt;30&lt;/b&gt;, &lt;b&gt;20&lt;/b&gt; (odwrotna kolejność!)&lt;br&gt;&lt;br&gt;Element 10 (dodany pierwszy) wciąż czeka na dnie stosu." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="350" y="340" width="340" height="100" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,453 @@
+STOS
+# OPIS ZADANIA
+# ------------
+# Napisz funkcję, która sprawdza czy podany napis jest palindromem,
+# wykorzystując stos.
+#
+# Palindrom to słowo/zdanie, które czytane od tyłu brzmi tak samo
+# jak od przodu (ignorujemy wielkość liter i spacje).
+#
+# Zasada działania:
+#   1. Zamień napis na małe litery i usuń spacje
+#   2. Włóż każdy znak oczyszczonego napisu na stos
+#   3. Zdejmuj znaki ze stosu i porównuj z oryginałem znak po znaku
+#   4. Jeśli wszystkie znaki się zgadzają — to palindrom
+#
+# WIZUALIZACJA
+# ------------
+#   Napis: "kajak"
+#
+#   Oczyszczony: "kajak"
+#
+#   Push: stos = [k, a, j, a, k]
+#
+#   Porównanie:
+#     oryginał[0] = 'k'  vs  pop() = 'k'  → zgadza się ✅
+#     oryginał[1] = 'a'  vs  pop() = 'a'  → zgadza się ✅
+#     oryginał[2] = 'j'  vs  pop() = 'j'  → zgadza się ✅
+#     oryginał[3] = 'a'  vs  pop() = 'a'  → zgadza się ✅
+#     oryginał[4] = 'k'  vs  pop() = 'k'  → zgadza się ✅
+#
+#   Wynik: True — "kajak" jest palindromem ✅
+#
+# INPUT
+# -----
+#   napis: str — dowolny ciąg znaków
+#
+# OUTPUT
+# ------
+#   bool — True jeśli napis jest palindromem, False w przeciwnym razie
+#
+# PRZYKŁADY
+# ---------
+#   czy_palindrom("kajak")          → True
+#   czy_palindrom("racecar")        → True
+#   czy_palindrom("Ala ma kota")    → False
+#   czy_palindrom("Kobyła ma mały bok") → True  (ignorujemy spacje i wielkość)
+#   czy_palindrom("hello")          → False
+#   czy_palindrom("")               → True  (pusty napis to palindrom)
+#   czy_palindrom("a")              → True
+#
+# PODPOWIEDZI
+# -----------
+#   1. Użyj .lower() do zamiany na małe litery
+#   2. Użyj .replace(" ", "") do usunięcia spacji
+#   3. Wrzuć oczyszczony napis na stos (każdy znak osobno)
+#   4. Zdejmuj ze stosu i porównuj z kolejnymi znakami oczyszczonego napisu
+#   5. Jeśli jakakolwiek para się nie zgadza — zwróć False
+
+
+#
+# OPIS ZADANIA
+# ------------
+# Napisz funkcję, która odwraca kolejność elementów w liście używając stosu.
+# Funkcja NIE powinna modyfikować oryginalnej listy — zwraca nową listę.
+#
+# Zasada działania:
+#   1. Włóż wszystkie elementy listy na stos (push)
+#   2. Zdejmuj elementy ze stosu (pop) i dodawaj do nowej listy
+#   3. LIFO sprawia, że elementy wychodzą w odwrotnej kolejności
+#
+# To zadanie pokazuje fundamentalną właściwość stosu — naturalnie
+# odwraca kolejność elementów.
+#
+# WIZUALIZACJA
+# ------------
+#   Lista: [10, 20, 30, 40]
+#
+#   Push: stos = [10, 20, 30, 40]  ← 40 na wierzchołku
+#
+#   Pop do nowej listy:
+#     pop() = 40 → wynik: [40]
+#     pop() = 30 → wynik: [40, 30]
+#     pop() = 20 → wynik: [40, 30, 20]
+#     pop() = 10 → wynik: [40, 30, 20, 10]
+#
+#   Wynik: [40, 30, 20, 10] ✅
+#
+# INPUT
+# -----
+#   lista: list — lista elementów dowolnego typu
+#
+# OUTPUT
+# ------
+#   list — nowa lista z elementami w odwrotnej kolejności
+#
+# PRZYKŁADY
+# ---------
+#   odwroc_liste([1, 2, 3, 4, 5])      → [5, 4, 3, 2, 1]
+#   odwroc_liste(["a", "b", "c"])       → ["c", "b", "a"]
+#   odwroc_liste([42])                  → [42]
+#   odwroc_liste([])                    → []
+#   odwroc_liste([True, False, True])   → [True, False, True]
+#
+# PODPOWIEDZI
+# -----------
+#   1. Utwórz nowy stos i pustą listę wynikową
+#   2. Pętlą for wrzuć każdy element listy na stos
+#   3. Pętlą while (dopóki stos nie jest pusty) zdejmuj elementy
+#      i dodawaj je do listy wynikowej za pomocą append()
+#   4. Pamiętaj — oryginalna lista nie powinna się zmienić!
+
+# OPIS ZADANIA
+# ------------
+# Napisz funkcję, która filtruje stos — zostawia tylko elementy
+# spełniające podany warunek (predykat). Warunek przekazujemy
+# jako funkcję (lambda lub zwykłą funkcję).
+#
+# Wymagania:
+#   - Oryginalny stos NIE jest modyfikowany
+#   - Kolejność elementów na nowym stosie jest taka sama jak na starym
+#   - Predykat to funkcja przyjmująca element i zwracająca True/False
+#
+# Zasada działania:
+#   1. Zdejmuj elementy z oryginalnego stosu na stos tymczasowy
+#   2. Zdejmuj ze stosu tymczasowego — teraz masz oryginalną kolejność
+#   3. Jeśli element spełnia predykat — push na wynikowy I z powrotem
+#      na oryginalny; jeśli nie — push tylko na oryginalny
+#
+# WIZUALIZACJA
+# ------------
+#   Stos: [1, 2, 3, 4, 5]  (5 na wierzchu)
+#   Predykat: lambda x: x % 2 == 0  (tylko parzyste)
+#
+#   Krok 1 — przenieś na tymczasowy (odwraca kolejność):
+#     tymczasowy: [5, 4, 3, 2, 1]  (1 na wierzchu)
+#
+#   Krok 2 — przenoś z tymczasowego, filtrując:
+#     pop 1 → 1 % 2 == 0? Nie  → oryginalny: [1],     wynikowy: []
+#     pop 2 → 2 % 2 == 0? Tak  → oryginalny: [1, 2],  wynikowy: [2]
+#     pop 3 → 3 % 2 == 0? Nie  → oryginalny: [1,2,3], wynikowy: [2]
+#     pop 4 → 4 % 2 == 0? Tak  → oryginalny: [1..4],  wynikowy: [2, 4]
+#     pop 5 → 5 % 2 == 0? Nie  → oryginalny: [1..5],  wynikowy: [2, 4]
+#
+#   Oryginalny stos odtworzony: [1, 2, 3, 4, 5] ✅
+#   Wynikowy stos: [2, 4] (4 na wierzchu) ✅
+#
+# INPUT
+# -----
+#   stos:     Stos — stos z elementami do przefiltrowania
+#   predykat: Callable — funkcja (lambda) zwracająca True/False
+#
+# OUTPUT
+# ------
+#   Stos — nowy stos zawierający tylko elementy spełniające predykat,
+#          w tej samej kolejności co na oryginalnym stosie
+#
+# PRZYKŁADY
+# ---------
+#   stos: [1,2,3,4,5], predykat: lambda x: x % 2 == 0  → [2, 4]
+#   stos: [1,2,3,4,5], predykat: lambda x: x > 3       → [4, 5]
+#   stos: [10,20,30],  predykat: lambda x: True         → [10, 20, 30]
+#   stos: [10,20,30],  predykat: lambda x: False        → []
+#   stos: [-3,0,5,-1], predykat: lambda x: x >= 0       → [0, 5]
+#
+# PODPOWIEDZI
+# -----------
+#   1. Użyj stosu tymczasowego żeby odwrócić kolejność (żebyś mógł
+#      przeglądać elementy od dna do wierzchu oryginału)
+#   2. Przy przenoszeniu z tymczasowego: push na oryginalny (odtwarzanie)
+#      i warunkowo push na wynikowy (filtrowanie)
+#   3. Predykat wywołujesz jak zwykłą funkcję: predykat(element)
+#   4. Lambda to skrócony zapis funkcji:
+#      lambda x: x > 0  jest równoważne  def f(x): return x > 0
+
+
+    # OPIS ZADANIA
+# ------------
+# Napisz funkcję, która zamienia liczbę dziesiętną (np. 13) na jej
+# reprezentację binarną (np. "1101") używając stosu.
+#
+# Zasada działania (dzielenie przez 2 z resztą):
+#   1. Dziel liczbę przez 2
+#   2. Resztę z dzielenia (0 lub 1) odłóż na stos
+#   3. Wynik dzielenia staje się nową liczbą
+#   4. Powtarzaj aż liczba będzie równa 0
+#   5. Zdejmij wszystkie reszty ze stosu — to wynik binarny
+#
+# Dlaczego stos? Bo reszty z dzielenia musimy odczytać w ODWROTNEJ
+# kolejności niż je obliczaliśmy — a to jest dokładnie LIFO!
+#
+# WIZUALIZACJA
+# ------------
+#   Liczba: 13
+#
+#   Krok 1: 13 / 2 = 6, reszta = 1  → push(1) → stos: [1]
+#   Krok 2:  6 / 2 = 3, reszta = 0  → push(0) → stos: [1, 0]
+#   Krok 3:  3 / 2 = 1, reszta = 1  → push(1) → stos: [1, 0, 1]
+#   Krok 4:  1 / 2 = 0, reszta = 1  → push(1) → stos: [1, 0, 1, 1]
+#
+#   Zdejmowanie ze stosu (LIFO):
+#     pop() = 1, pop() = 1, pop() = 0, pop() = 1
+#
+#   Wynik: "1101" ✅  (sprawdzenie: 1×8 + 1×4 + 0×2 + 1×1 = 13)
+#
+# INPUT
+# -----
+#   liczba: int — nieujemna liczba całkowita (>= 0)
+#
+# OUTPUT
+# ------
+#   str — reprezentacja binarna liczby
+#
+# PRZYKŁADY
+# ---------
+#   na_binarny(0)   → "0"
+#   na_binarny(1)   → "1"
+#   na_binarny(2)   → "10"
+#   na_binarny(5)   → "101"
+#   na_binarny(10)  → "1010"
+#   na_binarny(13)  → "1101"
+#   na_binarny(255) → "11111111"
+#
+# PODPOWIEDZI
+# -----------
+#   1. Obsłuż przypadek specjalny: jeśli liczba == 0, zwróć "0"
+#   2. W pętli while (dopóki liczba > 0):
+#      - oblicz resztę: liczba % 2
+#      - wrzuć resztę na stos
+#      - podziel liczbę: liczba // 2 (dzielenie całkowite)
+#   3. Zdejmuj ze stosu i buduj string wyniku
+#   4. Możesz sprawdzić wynik porównując z wbudowanym bin()
+
+
+KOLEJKA
+
+
+# OPIS ZADANIA
+# ------------
+# Masz kolejkę zawierającą TYLKO zera i jedynki.
+# Posortuj ją tak, aby wszystkie 0 były na początku, a 1 na końcu.
+# Użyj DWÓCH kolejek pomocniczych — jednej na zera, drugiej na jedynki.
+#
+# WIZUALIZACJA
+# ------------
+#   Kolejka:  PRZÓD → [1, 0, 1, 0, 0, 1] ← TYŁ
+#
+#   Krok 1 — rozdziel na dwie kolejki:
+#     dequeue() = 1 → kolejka_jedynek: [1]
+#     dequeue() = 0 → kolejka_zer:    [0]
+#     dequeue() = 1 → kolejka_jedynek: [1, 1]
+#     dequeue() = 0 → kolejka_zer:    [0, 0]
+#     dequeue() = 0 → kolejka_zer:    [0, 0, 0]
+#     dequeue() = 1 → kolejka_jedynek: [1, 1, 1]
+#
+#   Krok 2 — złącz: najpierw zera, potem jedynki:
+#     wynik: [0, 0, 0, 1, 1, 1] ✅
+#
+# ZŁOŻONOŚĆ
+# ---------
+#   Czasowa:    O(n) — jedno przejście do rozdzielenia, jedno do złączenia
+#   Pamięciowa: O(n) — dwie kolejki pomocnicze łącznie trzymają n elementów
+#
+# INPUT
+# -----
+#   kolejka: Kolejka — kolejka zawierająca tylko wartości 0 i 1
+#
+# OUTPUT
+# ------
+#   Kolejka — posortowana kolejka (zera na początku, jedynki na końcu)
+#
+# PRZYKŁADY
+# ---------
+#   [1, 0, 1, 0, 0, 1]  → [0, 0, 0, 1, 1, 1]
+#   [0, 0, 0]            → [0, 0, 0]
+#   [1, 1, 1]            → [1, 1, 1]
+#   [1, 0]               → [0, 1]
+#   []                   → []
+#
+# PODPOWIEDZI
+# -----------
+#   1. Utwórz dwie pomocnicze kolejki: kolejka_zer i kolejka_jedynek
+#   2. Przeglądaj oryginalną kolejkę (dequeue):
+#      - jeśli element == 0 → enqueue do kolejka_zer
+#      - jeśli element == 1 → enqueue do kolejka_jedynek
+#   3. Utwórz kolejkę wynikową:
+#      - najpierw przepisz wszystko z kolejka_zer
+#      - potem przepisz wszystko z kolejka_jedynek
+
+
+# OPIS ZADANIA
+# ------------
+# Napisz funkcję, która znajduje OSTATNI element kolejki (ten na końcu).
+# Kolejka udostępnia tylko operacje: enqueue, dequeue, front, jest_pusta.
+# NIE masz bezpośredniego dostępu do ostatniego elementu!
+#
+# Po zakończeniu kolejka musi wyglądać DOKŁADNIE tak samo jak przed
+# wywołaniem — nie możesz jej zniszczyć.
+#
+# WIZUALIZACJA
+# ------------
+#   Kolejka: PRZÓD → [10, 20, 30, 40] ← TYŁ
+#                                  ↑ szukamy tego
+#
+#   Krok 1 — dequeue i enqueue (n razy):
+#     dequeue() = 10 → ostatni = 10, enqueue(10)  → [20, 30, 40, 10]
+#     dequeue() = 20 → ostatni = 20, enqueue(20)  → [30, 40, 10, 20]
+#     dequeue() = 30 → ostatni = 30, enqueue(30)  → [40, 10, 20, 30]
+#     dequeue() = 40 → ostatni = 40, enqueue(40)  → [10, 20, 30, 40]
+#                                                     ↑ kolejka jak nowa!
+#
+#   Wynik: 40 ✅  (kolejka nienaruszona ✅)
+#
+# ZŁOŻONOŚĆ
+# ---------
+#   Czasowa:    O(n) — przeglądamy każdy element dokładnie raz
+#   Pamięciowa: O(1) — nie tworzymy dodatkowych struktur
+#
+# INPUT
+# -----
+#   kolejka: Kolejka — niepusta kolejka
+#
+# OUTPUT
+# ------
+#   dowolny typ — ostatni element kolejki
+#
+# PRZYKŁADY
+# ---------
+#   [10, 20, 30, 40]    → 40
+#   ["A", "B", "C"]     → "C"
+#   [42]                 → 42
+#   [1, 1, 1, 5]        → 5
+#
+# PODPOWIEDZI
+# -----------
+#   1. Zapamiętaj rozmiar kolejki: n = kolejka.rozmiar()
+#   2. Powtórz n razy:
+#      - zdejmij element z przodu (dequeue)
+#      - zapamiętaj go w zmiennej "ostatni"
+#      - wstaw go z powrotem na koniec (enqueue)
+#   3. Po n obrotach kolejka wraca do pierwotnego stanu
+#   4. Zmienna "ostatni" zawiera ostatni przetworzony element
+
+# OPIS ZADANIA
+# ------------
+# Napisz funkcję, która usuwa z kolejki co k-ty element.
+# Elementy na pozycjach 1, 2, ..., k-1 zostają, k-ty odpada,
+# k+1, k+2, ..., 2k-1 zostają, 2k-ty odpada, itd.
+# Pozycje liczymy od 1.
+#
+# WIZUALIZACJA (k = 3)
+# ---------------------
+#   Kolejka: PRZÓD → [A, B, C, D, E, F, G, H, I] ← TYŁ
+#   Pozycje:          1  2  3  4  5  6  7  8  9
+#                           ↑        ↑        ↑  usuwamy
+#
+#   Pozycja 1 (A): 1 % 3 ≠ 0 → zostaje   wynik: [A]
+#   Pozycja 2 (B): 2 % 3 ≠ 0 → zostaje   wynik: [A, B]
+#   Pozycja 3 (C): 3 % 3 = 0 → USUNIĘTY
+#   Pozycja 4 (D): 4 % 3 ≠ 0 → zostaje   wynik: [A, B, D]
+#   Pozycja 5 (E): 5 % 3 ≠ 0 → zostaje   wynik: [A, B, D, E]
+#   Pozycja 6 (F): 6 % 3 = 0 → USUNIĘTY
+#   Pozycja 7 (G): 7 % 3 ≠ 0 → zostaje   wynik: [A, B, D, E, G]
+#   Pozycja 8 (H): 8 % 3 ≠ 0 → zostaje   wynik: [A, B, D, E, G, H]
+#   Pozycja 9 (I): 9 % 3 = 0 → USUNIĘTY
+#
+#   Wynik: PRZÓD → [A, B, D, E, G, H] ← TYŁ  ✅
+#
+# ZŁOŻONOŚĆ
+# ---------
+#   Czasowa:    O(n) — każdy element przetwarzany dokładnie raz
+#   Pamięciowa: O(n) — nowa kolejka przechowuje elementy które zostają
+#
+# INPUT
+# -----
+#   kolejka: Kolejka — kolejka z elementami
+#   k: int           — co który element usunąć (k >= 2)
+#
+# OUTPUT
+# ------
+#   Kolejka — nowa kolejka bez co k-tych elementów
+#
+# PRZYKŁADY
+# ---------
+#   [A, B, C, D, E, F], k=2  → [A, C, E]       (usunięte: B, D, F)
+#   [A, B, C, D, E, F], k=3  → [A, B, D, E]    (usunięte: C, F)
+#   [1, 2, 3], k=2           → [1, 3]           (usunięte: 2)
+#   [1], k=2                 → [1]              (nic nie usunięto)
+#   [], k=3                  → []
+#
+# PODPOWIEDZI
+# -----------
+#   1. Utwórz nową kolejkę wynikową i licznik pozycji (zacznij od 1)
+#   2. Pętla while — dopóki oryginalna kolejka nie jest pusta:
+#      - dequeue element
+#      - jeśli pozycja % k != 0 → enqueue do wyniku (element zostaje)
+#      - jeśli pozycja % k == 0 → pomijamy
+
+
+TREŚĆ ZADANIA:
+    Napisz funkcję wstaw_za(lista, szukana, nowe_dane), która znajduje
+    PIERWSZY węzeł o wartości "szukana" i wstawia za nim nowy węzeł
+    z danymi "nowe_dane".
+
+    To naturalna operacja dla listy jednokierunkowej — w przeciwieństwie
+    do tablic (list), nie operujemy na indeksach, lecz na wskaźnikach.
+    Gdy MAMY węzeł, wstawienie za nim to O(1) — wystarczy przepiąć
+    dwa wskaźniki, bez przesuwania jakichkolwiek elementów.
+
+    Aby wstawić węzeł za danym węzłem, przepinamy wskaźniki:
+
+    PRZED:   [szukana] -> [C] -> ...
+    PO:      [szukana] -> [NOWY] -> [C] -> ...
+
+    W liście jednokierunkowej nie da się wstawić PRZED danym węzłem
+    w O(1), bo nie mamy wskaźnika "poprzedni" — musielibyśmy przejść
+    listę od głowy. Dlatego wstawianie ZA węzłem jest operacją
+    naturalną dla tej struktury.
+
+INPUT:
+    - lista: ListaJednokierunkowa — lista do modyfikacji
+    - szukana: wartość węzła, za którym wstawiamy
+    - nowe_dane: wartość nowego węzła
+
+OUTPUT:
+    - brak (funkcja modyfikuje listę w miejscu)
+    - ValueError, jeśli szukana wartość nie istnieje w liście
+
+PRZYKŁADY:
+    Lista: 10 -> 30 -> 40 -> None
+    wstaw_za(lista, 10, 20)  → 10 -> 20 -> 30 -> 40 -> None
+    wstaw_za(lista, 40, 50)  → 10 -> 20 -> 30 -> 40 -> 50 -> None
+    wstaw_za(lista, 99, 0)   → ValueError (99 nie istnieje)
+
+    Lista z duplikatami: 5 -> 5 -> 10 -> None
+    wstaw_za(lista, 5, 7)    → 5 -> 7 -> 5 -> 10 -> None
+    (wstawia za PIERWSZYM znalezionym węzłem o wartości 5)
+
+PODPOWIEDZI:
+    1. Przejdź listę od głowy, szukając węzła z danymi == szukana.
+    2. Gdy znajdziesz — utwórz nowy węzeł i przepnij wskaźniki:
+       nowy.nastepny = znaleziony.nastepny
+       znaleziony.nastepny = nowy
+    3. Kolejność przepinania jest kluczowa! Najpierw podłącz nowy
+       do reszty listy, potem dopiero podłącz znaleziony do nowego.
+    4. Jeśli przejdziesz całą listę i nie znajdziesz → ValueError.
+
+ZŁOŻONOŚĆ OBLICZENIOWA:
+    Czasowa:  O(n) — w najgorszym przypadku szukana wartość jest
+              na końcu listy i musimy przejść wszystkie węzły.
+              Samo wstawienie (przepięcie wskaźników) to O(1).
+    Pamięciowa: O(1) — tworzymy tylko jeden nowy węzeł.
+
+

@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e">
+    <diagram id="kolejka-front" name="Operacja front()">
+        <mxGraphModel dx="444" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="&lt;b&gt;Operacja front() — podgląd przodu kolejki (bez usuwania)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="20" width="650" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="code" value="&lt;font face=&quot;Courier New&quot;&gt;def front(self):&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if self.jest_pusta():&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;raise IndexError(&quot;kolejka pusta&quot;)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return self._dane[0]&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="70" width="380" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="step_title" value="&lt;b&gt;front() — kolejka się NIE zmienia&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="180" width="350" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_top" value="" style="shape=line;strokeColor=#333333;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="240" width="500" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_bot" value="" style="shape=line;strokeColor=#333333;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="320" width="500" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="frame_left" value="" style="shape=line;strokeColor=#333333;strokeWidth=3;rotation=90;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="275" width="90" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="&lt;b&gt;10&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="255" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="&lt;b&gt;20&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="255" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="&lt;b&gt;30&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=16;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="255" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="front_arrow" value="" style="shape=flexArrow;endArrow=classic;startArrow=none;html=1;fillColor=#6C8EBF;strokeColor=#4472C4;width=8;endSize=6;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="350" as="sourcePoint"/>
+                        <mxPoint x="270" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="front_label" value="&lt;b&gt;front()&lt;/b&gt;&lt;br&gt;zwraca &lt;b&gt;10&lt;/b&gt;&lt;br&gt;&lt;i&gt;(tylko odczyt!)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#4472C4;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="360" width="130" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="przod_label" value="&lt;b&gt;PRZÓD&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#d80073;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="225" width="70" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="tyl_label" value="&lt;b&gt;TYŁ&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;fontColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="475" y="225" width="70" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="compare_title" value="&lt;b&gt;front() vs dequeue() — jaka różnica?&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="450" width="380" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="h_op" value="&lt;b&gt;Operacja&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="490" width="130" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="h_ret" value="&lt;b&gt;Zwraca wartość?&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="490" width="160" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="h_rem" value="&lt;b&gt;Usuwa element?&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="490" width="160" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="h_chg" value="&lt;b&gt;Zmienia kolejkę?&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="490" width="150" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1_op" value="&lt;b&gt;front()&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="525" width="130" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1_ret" value="TAK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=center;fontStyle=1;fontColor=#008a00;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="525" width="160" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1_rem" value="NIE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=center;fontStyle=1;fontColor=#008a00;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="525" width="160" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r1_chg" value="NIE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=center;fontStyle=1;fontColor=#008a00;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="525" width="150" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2_op" value="&lt;b&gt;dequeue()&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="560" width="130" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2_ret" value="TAK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=center;fontStyle=1;fontColor=#008a00;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="560" width="160" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2_rem" value="TAK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;align=center;fontStyle=1;fontColor=#CC0000;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="560" width="160" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r2_chg" value="TAK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;align=center;fontStyle=1;fontColor=#CC0000;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="560" width="150" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="analogy" value="&lt;b&gt;Analogia:&lt;/b&gt;&lt;br&gt;&lt;b&gt;front()&lt;/b&gt; = patrzysz kto jest pierwszy w kolejce&lt;br&gt;&lt;b&gt;dequeue()&lt;/b&gt; = ta osoba odchodzi (zostaje obsłużona)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="630" width="400" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="complexity" value="&lt;b&gt;Złożoność: O(1)&lt;/b&gt; — odczyt pierwszego elementu (_dane[0])" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="725" width="380" height="35" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
